@@ -1428,7 +1428,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #1f2627;
+  background: #000;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1443,7 +1443,7 @@ section {
 
 
 #footer .footer-top {
-  background: #2a3336;
+  background: #212425;
   border-bottom: 1px solid #354144;
   padding: 60px 0 30px 0;
 }
@@ -1484,7 +1484,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #01b1d7;
+  background: #d50101;
   color: #fff;
   text-decoration: none;
 }
@@ -1509,7 +1509,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #40dcfe;
+  color: #d50101;
   font-size: 18px;
   line-height: 1;
 }
@@ -1532,7 +1532,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #27d8fe;
+  color: #d50101;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1558,7 +1558,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #01b1d7;
+  background: #d50101;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
