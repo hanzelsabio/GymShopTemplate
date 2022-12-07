@@ -66,6 +66,29 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Announcement Bar
+--------------------------------------------------------------*/
+
+#announcement-bar{
+  position: relative;
+  top: 0; left:0; right: 0;
+  z-index: 995;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background:#000;
+  box-shadow: var(--box-shadow);
+}
+
+#announcement-bar p{
+text-align: center;
+font-size: 15px;
+font-family: 'Alegreya Sans SC', sans-serif;
+color: #fff;
+padding: 12px;
+}
+
+/*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
@@ -74,9 +97,11 @@ h6 {
   font-size: 14px;
   height: 44px;
   padding: 0;
-  transition: all 0.5s;
+  transition: all 0.01s;
   overflow: hidden;
-  z-index: 996;
+  z-index: 995;
+  top: 50px;
+  position: absolute;
 }
 
 #topbar.topbar-scrolled {
@@ -120,15 +145,22 @@ h6 {
   border-left: 0;
 }
 
+@media (max-width: 590px) {
+  #topbar {
+    top: 40px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
   height: 70px;
-  z-index: 997;
-  transition: all 0.5s;
+  z-index: 995;
+  transition: all 0s;
   background: #fff;
-  top: 44px;
+  top: 94px;
+  position: fixed;
 }
 
 #header .social-links a {
@@ -179,6 +211,12 @@ h6 {
   max-height: 80px;
 }
 
+@media (max-width: 590px) {
+  #header {
+    top: 85px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -187,6 +225,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  position: absolute;
 }
 
 .navbar ul {
@@ -295,125 +334,18 @@ h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: #354144;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
-
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-}
-
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(31, 38, 39, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #354144;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #01b1d7;
-}
-
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #01b1d7;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 .bottombar {
   margin: 0 0 -180px 0;
-  padding: 8rem 5rem 5rem 5rem;
+  padding: 115px 80px 80px 80px;
   background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 995;
 }
 
 .bottombar ul {
@@ -512,6 +444,12 @@ h6 {
   visibility: visible;
 }
 
+@media (max-width: 590px) {
+  #bottombar {
+    padding: 105px 80px 80px 80px;
+  }
+}
+
 @media (max-width: 1366px) {
   .bottombar .dropdown .dropdown ul {
     left: -90%;
@@ -557,7 +495,7 @@ h6 {
   bottom: 0;
   background: rgba(31, 38, 39, 0.9);
   transition: 0.3s;
-  z-index: 999;
+  z-index: 995;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -636,8 +574,8 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 50vh;
+  width: auto;
+  height: 500px;
   background-color: rgba(31, 38, 39, 0.8);
   overflow: hidden;
   position: relative;
@@ -647,8 +585,8 @@ h6 {
 
 #hero .carousel-item {
   width: 100%;
-  height: 400px;
-  background-size: cover;
+  height: 500px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -727,7 +665,7 @@ h6 {
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 48px;
+  font-size: 45px;
   line-height: 1;
   width: auto;
   height: auto;
@@ -735,8 +673,8 @@ h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   margin: 0 4px;
   transition: ease-in;
@@ -796,6 +734,8 @@ h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -854,6 +794,79 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# Category
+--------------------------------------------------------------*/
+
+#category {
+  padding: 50px 20px 0 20px;
+}
+
+.hovereffect {
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor: pointer;
+  }
+  
+  .hovereffect .overlay {
+  width:100%;
+  height:80%;
+  position:absolute;
+  overflow:hidden;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:rgba(216, 216, 216, 0.438);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
+  }
+  
+  .hovereffect img {
+  display:block;
+  position:relative;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
+  }
+  
+  .hovereffect h2 {
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  font-size:17px;
+  background:rgb(0, 0, 0);
+  -webkit-transform:translatey(-20px);
+  -ms-transform:translatey(-20px);
+  transform:translatey(-170px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  padding: 15px;
+  z-index: 994;
+  }
+    
+  .hovereffect:hover img {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1);
+  }
+  
+  .hovereffect:hover .overlay {
+  opacity:1;
+  filter:alpha(opacity=100);
+  }
+  
+  .hovereffect:hover h2 {
+  opacity:1;
+  filter:alpha(opacity=100);
+  -ms-transform:translatey(0);
+  -webkit-transform:translatey(0);
+  transform:translatey(-50px);
+  }
+  
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
