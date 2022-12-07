@@ -575,7 +575,7 @@ padding: 12px;
 --------------------------------------------------------------*/
 #hero {
   width: auto;
-  height: 500px;
+  height: 800px;
   background-color: rgba(31, 38, 39, 0.8);
   overflow: hidden;
   position: relative;
@@ -585,8 +585,8 @@ padding: 12px;
 
 #hero .carousel-item {
   width: 100%;
-  height: 500px;
-  background-size: contain;
+  height: 800px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -713,6 +713,66 @@ padding: 12px;
   }
 }
 
+@media (max-width: 590px) {
+  #hero {
+    width: 100%;
+    height: 240px;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 240px;
+  }  
+}
+
+@media (min-width: 591px) {  
+  #hero {
+    width: 100%;
+    height: 300px;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 300px;
+  }  
+}
+
+@media (min-width: 768px) {  
+  #hero {
+    width: 100%;
+    height: 400px;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 400px;
+  }  
+}
+
+@media (min-width: 1008px) {  
+  #hero {
+    width: 100%;
+    height: 600px;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 600px;
+  }  
+}
+
+@media (min-width: 1208px) {  
+  #hero {
+    width: 100%;
+    height: 680px;
+  }
+  
+  #hero .carousel-item {
+    width: 100%;
+    height: 680px;
+  }  
+}
+
 @media (min-width: 1024px) {
   #hero p {
     width: 60%;
@@ -799,7 +859,7 @@ section {
 --------------------------------------------------------------*/
 
 #category {
-  padding: 50px 20px 0 20px;
+  padding: 30px 20px 0 20px;
 }
 
 .hovereffect {
@@ -814,7 +874,7 @@ section {
   
   .hovereffect .overlay {
   width:100%;
-  height:80%;
+  height:85%;
   position:absolute;
   overflow:hidden;
   top:0;
@@ -836,12 +896,12 @@ section {
   text-transform:uppercase;
   color:#fff;
   text-align:center;
-  position:relative;
-  font-size:17px;
+  position: relative;
+  font-size:20px;
   background:rgb(0, 0, 0);
   -webkit-transform:translatey(-20px);
   -ms-transform:translatey(-20px);
-  transform:translatey(-170px);
+  transform:translatey(-20px);
   -webkit-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
   padding: 15px;
@@ -849,8 +909,8 @@ section {
   }
     
   .hovereffect:hover img {
-  -ms-transform:scale(1.2);
-  -webkit-transform:scale(1.2);
+  -ms-transform:scale(1);
+  -webkit-transform:scale(1);
   transform:scale(1);
   }
   
