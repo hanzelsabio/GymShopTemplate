@@ -1434,6 +1434,14 @@ section {
   font-size: 14px;
 }
 
+.footer-logo img {
+  padding: 0;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  max-height: 100px;
+}
+
+
 #footer .footer-top {
   background: #2a3336;
   border-bottom: 1px solid #354144;
