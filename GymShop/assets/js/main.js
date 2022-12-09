@@ -150,6 +150,7 @@
     }
   }, true)
 
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
