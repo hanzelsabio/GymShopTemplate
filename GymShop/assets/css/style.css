@@ -1004,7 +1004,7 @@ section {
 }
 .product-grid .social li a:hover{
   color:#fff;
-  background-color:#ef5777
+  background-color:#d50101
 }
 .product-grid .social li a:after,
 .product-grid .social li a:before{
@@ -1038,7 +1038,7 @@ section {
 .product-grid .product-discount-label,
 .product-grid .product-new-label{
   color:#fff;
-  background-color:#ef5777;
+  background-color:#d50101;
   font-size:12px;
   text-transform:uppercase;
   padding:2px 7px;
@@ -1067,12 +1067,12 @@ section {
 .product-grid .product-content{
   background-color:#fff;
   text-align:center;
-  padding:12px 0;
+  padding: 0;
   margin:0 auto;
   position:absolute;
   left:0;
   right:0;
-  bottom:-30px;
+  bottom:-60px;
   z-index:1;
   transition:all .3s
 }
@@ -1084,7 +1084,7 @@ section {
   font-weight:400;
   letter-spacing:.5px;
   text-transform:capitalize;
-  margin:0 0 10px;
+  margin:15px 0 10px;
   transition:all .3s ease 0s
 }
 .product-grid .title a{
@@ -1092,14 +1092,14 @@ section {
 }
 .product-grid .title a:hover,
 .product-grid:hover .title a{
-  color:#ef5777
+  color:#d50101
 }
 .product-grid .price{
   color:#333;
   font-size:17px; 
   font-weight:700;
   letter-spacing:.6px;
-  margin-bottom:8px;
+  margin-bottom: 20px;
   text-align:center;
   transition:all .3s
 }
@@ -1114,7 +1114,7 @@ section {
 
 .product-grid .add-cart{
   padding: 10px;
-  background-color: #ef5777;
+  background-color: #d50101;
 }
 
 .product-grid .add-to-cart{
