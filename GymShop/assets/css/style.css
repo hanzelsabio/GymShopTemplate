@@ -351,15 +351,6 @@ padding: 12px;
   color: #000;
 }
 
-.nav-item {
-  margin-right: -70px;
-}
-
-.nav-link {
-  margin-left: -100px;
-  padding: 0;
-}
-
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
