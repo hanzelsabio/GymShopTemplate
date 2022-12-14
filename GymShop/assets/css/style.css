@@ -381,7 +381,7 @@ padding: 12px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 1;
+  z-index: 0;
 }
 
 .bottombar ul {
@@ -616,7 +616,7 @@ padding: 12px;
   overflow: hidden;
   position: relative;
   padding: 0;
-  margin-top: 160px;
+  margin-top: 180px;
   z-index: 0;
 }
 
@@ -1636,8 +1636,13 @@ section {
   }
 
   .footer-links i{
+    text-align: center;
     padding-left: 50px;
   }
+
+  #quicklinks .footer-top .footer-newsletter {
+    padding: 0 50px 10px 50px;
+  }  
 }
 
 /*--------------------------------------------------------------
