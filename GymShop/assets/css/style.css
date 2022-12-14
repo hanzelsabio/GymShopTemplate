@@ -896,7 +896,7 @@ section {
 --------------------------------------------------------------*/
 
 #category {
-  padding: 30px 20px 0 20px;
+  padding: 20px 0 0 0;
 }
 
 .hovereffect {
@@ -963,12 +963,20 @@ section {
   -webkit-transform:translatey(0);
   transform:translatey(-50px);
   }
+
+  @media (max-width: 575px) {
+    .category .col-sm-6 {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+}
+    
   
 /*--------------------------------------------------------------
 # Product
 --------------------------------------------------------------*/
 #products {
-  padding: 20px;
+  padding: 10px;
 }
 
 .product-grid{
@@ -1163,9 +1171,16 @@ section {
   font-weight:600;
 }
 
+@media (max-width: 575px) {
+  #products .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width:990px){
   .product-grid{
-      margin-bottom:30px
+      margin-bottom:20px
   }
 }
 
@@ -1613,6 +1628,16 @@ section {
 
 #quicklinks .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #5b5656;
+}
+
+@media (max-width: 767px) {
+  #quicklinks {
+    text-align: center;
+  }
+
+  .footer-links i{
+    padding-left: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
